@@ -1,11 +1,46 @@
 body{
   font-family: 'Montserrat-Black', sans-serif;
+  text-align:center;
 }
-#title{
+h1,h2,h3,h4,h5,h6{
+    font-family:"Montserrat-Bold";
+}
+
+#title .container-fluid{
+  text-align:left;
+}
+
+#features{
+  color:#8f8f8f;
+  padding:7% 15%;
+  position: relative;
+}
+#testimonials{
+  background-color:#ef8172;
+}
+#press{
+  background-color:#ef8172;
+  padding-bottom:3%;
+}
+#pricing{
+  padding:6rem;
+}
+#cta{
+  font-family:Montserrat-Black;
+}
+#footer{
+  background-color:#fff;
+  padding:3rem;
+}
+
+.colored{
   background-color: #ff4c68;
-  color:#ffffff;
+  color:#fff;
 }
-h1{
+.white{
+background-color:#fff;
+}
+.big-heading{
   font-family: 'Montserrat-Black', sans-serif;
   font-size:3.5rem;
   line-height: 1.5;
@@ -17,13 +52,14 @@ h1{
   font-weight: bold;
 }
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 .doggo{
   transform: rotate(25deg);
   width:60%;
+  position: absolute;
+  right:30%;
 }
-
 .navbar{
   padding:0 0 04.5rem;
 }
@@ -42,18 +78,67 @@ h1{
   /* margin-left:1.2rem;*/
   margin-bottom:1rem;
 }
-#features{
-  text-align:center;
-  color:#8f8f8f;
-  padding:7% 15%;
-
+.feature-icon:hover {
+  color: #ff4c68;
 }
-h3{
-  font-family:Montserrat-Bold;
+.player{
+  width:10%;
+  border-radius:100%;
+  margin:5%;
+}
+.presslogo{
+  width:15%;
+  margin: 20px 20px 15px;
+}
+.testimonial-image{
+  width:10%;
+  border-radius:100%;
+  margin:5%;
+}
+.carousel-item{
+  padding:7% 15%;
+}
+.pricing-col{
+  padding:3% 2%;
+}
+.call-action-desc{
+  font-size: 80px;
+  color:white;
+  padding:5% 100px 0;
+}
+.download2{
+    margin:3% 3% 5% 0;
+}
+.icon-f{
+  color:#000;
+  margin:0.75rem;
+}
+.footer-text{
+  font-family: Montserrat-Light;
+}
+.price-tag{
+  font-size:3rem;
+  line-height:4rem;
+}
+.testimonial-title{
+  font-size:3rem;
+  line-height:4rem;
+}
+.price-heading{
+  font-size:3rem;
+  line-height:4rem;
+}
+.feature-title{
   font-weight:bold;
   font-size:1.5rem;
   color:#000;
 }
-.feature-icon:hover {
-  color: #ff4c68;
+@media (max-width:1028px ){
+  .doggo{
+    position:static;
+    transform:rotate(0);
+  }
+  #title{
+    text-align:center;
+  }
 }
